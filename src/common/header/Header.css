@@ -1,0 +1,50 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 8px 32px 8px 16px;
+  height: 36px;
+}
+
+.Header__logo {
+  background-color: #ff7f7f;
+  height: 35px;
+  animation-name: rotate-logo;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Header__button {
+  float: right;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,15 @@
+.UpComingMovie {
+    display: flex;
+    justify-content: center;
+    background-color: #ff9999;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.GridScroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    height: 200px;
+    max-width: 100%;
+}
